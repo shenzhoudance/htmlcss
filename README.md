@@ -87,3 +87,6 @@ Find me in app/views/welcome/index.html.erb
  <html>
 
  ```
+
+ 9、呈现效果一
+ <img src="app/assets/images/xiao-guo-1.png">
