@@ -23,13 +23,13 @@ Find me in app/views/welcome/index.html.erb
 
 6、开始学习修改 welcome 的静态界面
 
-1、删除 welcome 的代码
+(1)删除 welcome 的代码
 
 <del>Welcome#index
 Find me in app/views/welcome/index.html.erb
 <del>
 
-2、添加下面的代码的内容
+(2)添加下面的代码的内容
 
 ```<html>
    <head>
@@ -38,7 +38,7 @@ Find me in app/views/welcome/index.html.erb
   <body>
       <h1>才华横溢科技（北京）有限责任公司</h1>
       <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" alt="">
-      <p>我们在构建一所在线职业技能大学</p>
+      <p>我们在构建一所<em>在线职业技能大学</em></p>
       <h2>如果你想要加入我们</h2>
       <p>可以直接联系我</p>
       <h3>联系方式</h3>
@@ -46,3 +46,19 @@ Find me in app/views/welcome/index.html.erb
    </body>
  <html>
  ```
+
+ 7、修改app/views/layouts/application.html.erb里面的标题；
+  ```
+  <title>Htmlcss</title>
+  改变为
+  <title>才华横溢</title>
+   ```
+   page的首页可以变为从Htmlcss变为才华横溢
+
+
+
+
+
+
+
+   
