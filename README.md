@@ -179,3 +179,133 @@ Find me in app/views/welcome/index.html.erb
 
 
 第二部分：网页静态页面制作
+
+一、修改代码：
+
+```
+清空 welcome 的全部的数据
+使用下面的代码数据完成替换
+```
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+       <style type="text/css">
+       body{
+         background-color: #b5a789;
+         margin:0px;
+       }
+       #herder{
+         background-color: #675c47;
+         margin:10px;
+         height:140px;
+         text-align: center;
+       }
+
+       #main{
+         display: table-cell;
+         background: #675c46;
+         padding: 15px;
+         font-size: 105%;
+         margin: 0px 330px 10px 10px;
+         width: 420px;
+         float: left;
+
+       }
+
+       #sidebar{
+         display: table-cell;
+         background: #675c43;
+         font-size: 105%;
+         padding: 15px;
+         margin: 0px 10px 10px 10px;
+         /*position: absolute;*/
+        /* top:150px;*/
+         /* right:0px;*/
+         /* width:280px;*/
+
+       }
+
+       #footer{
+         background-color: #675c47;
+         color: #efe5d0;
+         text-align: center;
+         padding: 15px;
+         margin: 10px;
+         font-size:90%;
+         clear: left;
+       }
+
+       h1{
+          font-size:120%;
+          color: #954b4b;
+       }
+
+       #slogan{
+         color: #954b4b;
+
+       }
+
+       #tableContainer{
+       display: table;
+       }
+
+       #tableRow{
+       display: table-row;
+       }
+       </style>
+
+   </head>
+
+      <body>
+        <div id="herder">
+        <h1>欢迎来到才华横溢的在线职业技能大学</h1>
+        <p>这里，将帮助你获取成功</p>
+        <a href="http：www.caihuahengyi.cn">www.caihuahengyi.cn</a>
+        </div>
+
+
+<div id="tableContainer">
+  <div id="tableRow">
+        <div id="main">
+        <h1>立即学习</h1>
+        <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" "width=150px; height=150px" alt="">
+        <p>加快速度</p>
+        </div>
+
+        <div id="sidebar">
+           <p class=green>
+          <br>
+
+          <a href="http:www.caihuahengyi.cn">www.caihuahengyi.cn</a>
+          <br>
+          <span class=slogan>
+           更高<br>
+           更快<br>
+           更强<br>
+          </span>
+           </p>
+        </div>
+
+      </div>
+</div>
+
+
+        <div id="footer">
+
+          &copy; 2018;caihuahengyi
+          <br>
+          帮助普通人获得成功的一所在线职业技能大学
+
+        </div>
+  </body>
+</html>
+
+```
+
+二、呈现效果
+  <img src="app/assets/images/xiao-guo-3.png">
