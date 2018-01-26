@@ -1,5 +1,7 @@
 # html/css 操作教程
 
+第一部分：基础篇
+
 1、新建一个专案
 
 ```rails new htmlcss```
@@ -90,3 +92,36 @@ Find me in app/views/welcome/index.html.erb
 
  9、呈现效果一
  <img src="app/assets/images/xiao-guo-1.png">
+
+ 第二部分：提高篇
+
+ 1、增加一个超链接
+
+ ```
+ <html>
+    <head>
+       <title>我是肖威</title>
+       <style type="text/css">
+          body{
+            background-color: #d2b48c;（添加土黄色背景）
+            margin-left: 20%;（设置左右外边距占页面20%）
+            margin-right: 20%;
+            border: 2px dotted black;（定义页面主题周围的边框是虚线，颜色是黑色）
+            padding: 10px 10px 10px 10px;（在页面主题周围创建一些内边距）
+            font-family: sans-serif;（定义文本使用字体）
+          }
+       </style>
+   </head>
+   <body>
+       <h1>才华横溢科技（北京）有限责任公司</h1>
+       <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" "width=300px; height=300px" alt="">
+       <p>我们在构建一所<em>在线职业技能大学</em></p>
+       <h2>如果你想要加入我们</h2>
+       <p>可以直接联系我</p>
+       <h3>联系方式</h3>
+       <p>494410617@qq.com</p>
+       <a href="www.caihuahengyi.cn"></a>
+    </body>
+  <html>
+
+  ```
