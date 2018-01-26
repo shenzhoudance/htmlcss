@@ -58,7 +58,7 @@ Find me in app/views/welcome/index.html.erb
 
 8、添加style标签,修改图片大小
 
-src="https://ws4.sinaimg.cn/large/006tNc79ly1fnttl5wdalj306205j0sw.jpg" "width=300px; height=300px" alt="">
+<img src="https://ws4.sinaimg.cn/large/006tNc79ly1fnttl5wdalj306205j0sw.jpg" "width=300px; height=300px" alt="">
 
 ```
 <html>
