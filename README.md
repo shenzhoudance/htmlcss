@@ -5,7 +5,7 @@
 ## Head First Html 与 CSS 第2版
 
 ---
-第一部分：基础篇
+# 第一部分：基础篇
 
 1、新建一个专案
 
@@ -183,7 +183,7 @@ Find me in app/views/welcome/index.html.erb
    <img src="app/assets/images/xiao-guo-2.png">
 
 
-第二部分：网页静态页面制作
+# 第二部分：网页静态页面制作
 
 一、修改代码：
 
@@ -314,3 +314,176 @@ Find me in app/views/welcome/index.html.erb
 
 二、呈现效果
   <img src="app/assets/images/xiao-guo-3.png">
+
+# 第三部分：静态网页全部呈现
+
+一、清空 welcome 专案
+```
+清空 welcome 的全部的数据
+使用下面的代码数据完成替换
+```
+
+```
+
+
+
+<html>
+   <head>
+      <title>我是肖威</title>
+      <style type="text/css">
+         body{
+           background-color: #b5a789;
+           font-family: sans-serif;
+           font-size: small;
+           margin: 0px;
+         }
+
+         header{
+           background-color: #675c47;
+           margin: 10px 10px 10px 10px ;
+           height:150px;
+           text-align: center;
+           border: 2px dotted black;
+         }
+
+         aside {
+           display:table-cell;
+           background: #675c47;
+           font-size:90%;
+           padding: 15px;
+           vertical-align: top;
+           margin: 10px 10px 10px 10px ;
+           text-align: center;
+           border: 2px dotted black;
+         }
+
+        footer{
+          background-color: #675c47;
+          color: #efe5d0;
+          text-align: center;
+          padding: 15px;
+          margin: 10px  10px 10px 10px;
+          font-size: 90%;
+          border: 2px dotted black;
+        }
+
+        section#sidebar{
+          display: table-cell;
+          background: #675c47;
+          width:20%;
+          padding: 15px;
+          vertical-align: top;
+          margin: 10px 10px 10px 10px ;
+          text-align: center;
+          border: 2px dotted black;
+        }
+
+        section#main{
+          display: table-cell;
+          background: #675c47;;
+          font-size: :90%
+          padding:15px 15px 15px 15px;
+          vertical-align: top;
+          margin: 10px 10px 10px 10px ;
+          text-align: center;
+          border: 2px dotted black;
+      }
+
+        h1{
+          color:white;
+        }
+
+        p{
+          color:white;
+        }
+
+
+      nav{
+        background-color: #efe5d0;
+        margin: 10px 10px 10px 10px;
+
+      }
+
+      nav ul {
+        margin:0px;
+        list-style-type: none;
+
+
+      }
+
+      nav ul li {
+        display: inline;
+        padding: 10px 10px 10px 10px;
+      }
+
+      nav ul.li.selected{
+        background-color: #c8b99c;
+      }
+      </style>
+
+
+  </head>
+  <body>
+
+
+    <nav>
+  <ul>
+    <li>才华横溢</li>
+    <li>学习大厅</li>
+    <li>帮助中心</li>
+    <li>立即报名</li>
+  </ul>
+    </nav>
+
+    <header class='top'>
+    <h1>欢迎来到才华横溢的在线职业技能大学</h1>
+    <p>在这里，将帮助你获取成功</p>
+    </header>
+
+<div id="tableContainer">
+      <div id="tableRow">
+            <section id="sidebar">
+              <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" "width=150px; height=150px" alt="">
+              <p>这里，将帮助你获取成功</p>
+              <audio controls="controls">
+            <source src="http://audio.xmcdn.com/group39/M08/D6/47/wKgJn1pqTSKyTdTEAB06n_38gao036.m4a" type="audio/mp3" />
+          </audio>
+              </section>
+                 <section id="main">
+                     <iframe height=288 width=512 src='http://player.youku.com/embed/XMzI5NDI2MjYyNA==' frameborder=0 'allowfullscreen'></iframe>
+                     <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" "width=150px; height=150px" alt="">
+                     <p>在这里，将帮助你获取成功</p>
+
+              </section>
+                 <aside>
+                   <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" "width=150px; height=150px" alt="">
+
+                  <p>在这里，将帮助你获取成功</p>
+                  <audio controls="controls">
+                  <source src="http://audio.xmcdn.com/group39/M08/D6/47/wKgJn1pqTSKyTdTEAB06n_38gao036.m4a" type="audio/mp3" />
+                  </audio>
+
+
+               </audio>
+                </aside>
+          </div>
+      </div>
+</div>
+
+</div>
+
+    <footer>
+    &copy; 2018;caihuahengyi
+    <br>
+    帮助普通人获得成功的一所在线职业技能大学
+    <br>
+    <time datetime="2018-01-26">2018/01/26</time>
+    </footer>
+
+
+   </body>
+ <html>
+```
+
+二、呈现效果
+  <img src="app/assets/images/xiao-guo-4.png">
