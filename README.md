@@ -1,5 +1,10 @@
 # html/css 操作教程
 
+
+# 参考书籍：
+## Head First Html 与 CSS 第2版
+
+---
 第一部分：基础篇
 
 1、新建一个专案
@@ -98,12 +103,12 @@ Find me in app/views/welcome/index.html.erb
        <title>我是肖威</title>
        <style type="text/css">
           body{
-            background-color: #d2b48c;（添加土黄色背景）
-            margin-left: 20%;（设置左右外边距占页面20%）
+            background-color: #d2b48c;
+            margin-left: 20%;
             margin-right: 20%;
-            border: 2px dotted black;（定义页面主题周围的边框是虚线，颜色是黑色）
-            padding: 10px 10px 10px 10px;（在页面主题周围创建一些内边距）
-            font-family: sans-serif;（定义文本使用字体）
+            border: 2px dotted black;
+            padding: 10px 10px 10px 10px;
+            font-family: sans-serif;
           }
        </style>
    </head>
