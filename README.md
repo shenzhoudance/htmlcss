@@ -90,12 +90,7 @@ Find me in app/views/welcome/index.html.erb
 
  ```
 
- 9、呈现效果一
- <img src="app/assets/images/xiao-guo-1.png">
-
- 第二部分：提高篇
-
- 1、增加一个超链接
+9、增加一个超链接
 
  ```
  <html>
@@ -126,3 +121,9 @@ Find me in app/views/welcome/index.html.erb
   <html>
 
   ```
+
+10、呈现效果
+  <img src="app/assets/images/xiao-guo-1.png">
+
+
+第二部分：blog界面制作
