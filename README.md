@@ -125,5 +125,57 @@ Find me in app/views/welcome/index.html.erb
 10、呈现效果
   <img src="app/assets/images/xiao-guo-1.png">
 
+11、定义不同的标签
+```<html>
+   <head>
+      <title>我是肖威</title>
+      <style type="text/css">
+      body{
+        background-color: #d2b48c;
+        margin-left: 20%;
+        margin-right: 20%;
+        border: 2px dotted black;
+        padding: 10px 10px 10px 10px;
+        font-family: sans-serif;
+      }
 
-第二部分：blog界面制作
+
+      h1,h2{
+        font-family: sans-serif;
+        color: gray;
+      }
+
+      h1{
+        border-bottom: 1px solid black;
+      }
+
+      p{
+        color: maroon;
+      }
+
+      p.green{
+        color: green
+      }
+
+
+      </style>
+  </head>
+
+<body>
+      <h1>才华横溢科技（北京）有限责任公司</h1>
+      <img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" "width=300px; height=300px" alt="">
+      <p>我们在构建一所<em>在线职业技能大学</em></p>
+      <h2>如果你想要加入我们</h2>
+      <p>可以直接联系我</p>
+      <h3>联系方式</h3>
+      <p class='green'>494410617@qq.com</p>
+      <h3>官方网址</h3>
+      <a href="http://www.caihuahengyi.cn">www.caihuahengyi.cn</a>
+</body>
+ <html>
+```
+ 11、呈现效果
+   <img src="app/assets/images/xiao-guo-2.png">
+
+
+第二部分：网页静态页面制作
