@@ -121,7 +121,7 @@ Find me in app/views/welcome/index.html.erb
        <h3>联系方式</h3>
        <p>494410617@qq.com</p>
        <h3>官方网址</h3>
-       <a href="www.caihuahengyi.cn">www.caihuahengyi.cn</a>
+       <a href="http://www.caihuahengyi.cn">www.caihuahengyi.cn</a>
     </body>
   <html>
 
