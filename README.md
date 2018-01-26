@@ -1,19 +1,24 @@
 # html/css 操作教程
 
 1、新建一个专案
->rails new htmlcss
+
+```rails new htmlcss```
 
 2、新建一个 welcome 的 controller
->rails g controller welcome index
+
+```rails g controller welcome index```
 
 3、修改config/rontes.rb
->将get welcome / index 修改为 root ：welcome#index
+
+```将get welcome / index 修改为 root ：welcome#index```
 
 4、让专案跑起来
->rails s
+
+```rails s```
 
 5、可以看到在http://localhost:3000/页面出现
->Welcome#index
+
+Welcome#index
 Find me in app/views/welcome/index.html.erb
 
 6、开始学习修改 welcome 的静态界面
@@ -26,7 +31,7 @@ Find me in app/views/welcome/index.html.erb
 
 2、添加下面的代码的内容
 
-<html>
+```<html>
    <head>
       <title>我是肖威</title>
   </head>
@@ -40,3 +45,4 @@ Find me in app/views/welcome/index.html.erb
       <p>494410617@qq.com</p>
    </body>
  <html>
+ ```
