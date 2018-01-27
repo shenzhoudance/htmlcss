@@ -3,6 +3,7 @@
 
 # 参考书籍：
 ## Head First Html 与 CSS 第2版
+## 精通HTML5+CSS3+JavaScript网页设计
 
 ---
 # 第一部分：基础篇
@@ -487,3 +488,183 @@ Find me in app/views/welcome/index.html.erb
 
 二、呈现效果
   <img src="app/assets/images/xiao-guo-4.png">
+
+# 第四部分：静态页面呈现
+<img src="app/assets/images/xiao-guo-5.png">
+
+```
+清空 welcome 的全部的数据
+使用下面的代码数据完成替换
+```
+
+(1)页面结构
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>才华横溢</title>
+    <style type="text/css">
+
+       </style>
+  </head>
+  <body>
+        <div id="container">
+
+            <div id="header">
+                  <h1>欢迎来到才华横溢职业技能在线大学</h1>
+                  <p class="white">帮助普通人获得成功的大学</p>
+            </div>
+
+            <div id="menu">
+                    <li><a href="http://caihuahengyi.cn">懂你时间</li></a>
+                    <li><a href="http://caihuahengyi.cn">学习大厅</li></a>
+                    <li><a href="http://caihuahengyi.cn">帮助中心</li></a>
+                    <li><a href="http://caihuahengyi.cn">立即报名</li></a>
+           </div>
+
+            <div id="content">
+
+                  <h3><a href="http://caihuahengyi.cn">欢迎来到全球最大的职业技能大学</a></h3>
+                  <p><img src="https://ws2.sinaimg.cn/large/006tNc79ly1fnts6bdguhj311x0pa7a6.jpg" "width=150px; height=150px" alt="">
+                    <audio controls="controls">
+                      <source src="http://audio.xmcdn.com/group39/M08/D6/47/wKgJn1pqTSKyTdTEAB06n_38gao036.m4a" type="audio/mp3" />
+                    </audio>
+                  </p>
+
+            </div>
+
+            <div id="classroom">
+            <h3><span>主推课程</span></h3>
+            <ul class="">
+              <li><a href="#">全栈工程师</a></li>
+              <li><a href="#">职场化办公</a></li>
+              <li><a href="#">内容运营官</a></li>
+            </ul>
+            <h3><span>前沿科技</span></h3>
+            <ul class="">
+              <li><a href="#">区块链技术</a></li>
+              <li><a href="#">虚拟现实技术</a></li>
+              <li><a href="#">人工智能技术</a></li>
+            </ul>
+            <h3><span>管理课程</span></h3>
+            <ul class="">
+              <li><a href="#">财务官</a></li>
+              <li><a href="#">执行官</a></li>
+              <li><a href="#">运营官</a></li>
+            </ul>
+            </div>
+
+            <div id="footer">
+            <h3>才华横溢科技（北京）有限责任公司</h3>
+            <p><a href="http://caihuahengyi.cn">帮助普通人获得成功的一所在线职业技能大学</a></p>
+            <p>2014-2018</p>
+            </div>
+        </div>
+  </body>
+</html>
+```
+（2）、呈现效果
+  <img src="app/assets/images/xiao-guo-6.png">
+
+(3)将css 代码 放入 styesheets/application.css 里面（一个个的放入）
+```
+#container{
+  margin: 0pt auto;
+  width: 770px;
+  position:relative;
+  border: 2px dotted black;
+}
+
+#header{
+  background: #c8b99c;
+  text-align: center;
+  border: 2px dotted black;
+  margin: 0pt auto;
+}
+h1{
+  margin: 0px;
+  padding: 0px;
+  border: 2px dotted black;
+  text-align: center;
+}
+p.white{
+  color:white;
+  border: 2px dotted black;
+  text-align: center;
+}
+
+
+#menu{
+  position: absolute;
+  top: 145px;
+  border: 2px dotted black;
+  width: 770px;
+}
+
+#menu li{
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  width: 180px;
+  margin-right: 3px;
+  font-size: 1.05em;
+  border: 2px dotted black;
+}
+#menu a:hover{
+  color: rgb(149, 32, 32);
+}
+
+#content{
+  background: #c8b99c;
+  border: 2px dotted red;
+  margin-top:130px;
+  float: left;
+  width: 450px;
+  margin-left: 3px;
+  height: 450px;
+
+}
+
+#content h3{
+ text-align: center;
+}
+
+#content p{
+  text-align: center;
+}
+
+
+#classroom{
+  background: #c8b99c;
+  border: 2px dotted red;
+  float: right;
+  width: 300px;
+  margin-top:130px;
+  margin-right: 3px;
+  height: 450px;
+
+}
+#classroom li{
+ list-style-type: none;
+
+}
+
+#classroom h3 {
+ margin-left:20px;
+}
+#footer{
+  background: #c8b99c;
+  text-align: center;
+  margin-top:650px;
+}
+
+#footer p {text-align: center;}
+#footer h3 {text-align: center;}
+#footer a {color: rgb(0, 0, 0);}
+#footer a:hover{color: rgb(223, 58, 0);}
+```
+
+（4）、呈现效果
+  <img src="app/assets/images/xiao-guo-7.png">

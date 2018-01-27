@@ -13,3 +13,98 @@
  *= require_tree .
  *= require_self
  */
+
+ #container{
+   margin: 0pt auto;
+   width: 770px;
+   position:relative;
+   border: 2px dotted black;
+ }
+
+ #header{
+   background: #c8b99c;
+   text-align: center;
+   border: 2px dotted black;
+   margin: 0pt auto;
+ }
+ h1{
+   margin: 0px;
+   padding: 0px;
+   border: 2px dotted black;
+   text-align: center;
+ }
+ p.white{
+   color:white;
+   border: 2px dotted black;
+   text-align: center;
+ }
+
+
+ #menu{
+   position: absolute;
+   top: 145px;
+   border: 2px dotted black;
+   width: 770px;
+ }
+
+ #menu li{
+   list-style-type: none;
+   float: left;
+   text-align: center;
+   width: 180px;
+   margin-right: 3px;
+   font-size: 1.05em;
+   border: 2px dotted black;
+ }
+ #menu a:hover{
+   color: rgb(149, 32, 32);
+ }
+
+ #content{
+   background: #c8b99c;
+   border: 2px dotted red;
+   margin-top:130px;
+   float: left;
+   width: 450px;
+   margin-left: 3px;
+   height: 450px;
+
+ }
+
+ #content h3{
+  text-align: center;
+ }
+
+ #content p{
+   text-align: center;
+ }
+
+
+ #classroom{
+   background: #c8b99c;
+   border: 2px dotted red;
+   float: right;
+   width: 300px;
+   margin-top:130px;
+   margin-right: 3px;
+   height: 450px;
+
+ }
+#classroom li{
+  list-style-type: none;
+
+}
+
+#classroom h3 {
+  margin-left:20px;
+}
+ #footer{
+   background: #c8b99c;
+   text-align: center;
+   margin-top:650px;
+ }
+
+ #footer p {text-align: center;}
+ #footer h3 {text-align: center;}
+ #footer a {color: rgb(0, 0, 0);}
+ #footer a:hover{color: rgb(223, 58, 0);}
