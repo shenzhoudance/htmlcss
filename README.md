@@ -6,6 +6,7 @@
 ## 精通HTML5+CSS3+JavaScript网页设计
 
 ---
+  <img src="app/assets/images/yang-jiang.png">
 # 第一部分：基础篇
 
 1、新建一个专案
