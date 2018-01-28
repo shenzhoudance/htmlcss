@@ -814,3 +814,4 @@ resources :messages
 
 <img src="app/assets/images/xiao-guo-8.png">
 <img src="app/assets/images/xiao-guo-9.png">
+<img src="app/assets/images/xiao-guo-10.png">
