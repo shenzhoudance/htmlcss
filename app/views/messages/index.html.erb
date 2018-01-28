@@ -1,0 +1,10 @@
+
+
+<% @messages.each do |message| %>
+<h1><%= message.title %></h1>
+<p><%= message.description %></p>
+<%= link_to "阅览课程", message_path(message),class: "btn btn-success" %><h1>
+</div>
+<% end %>
+
+<h2><%= link_to "新增课程", new_message_path, class: "btn btn-default pull-right" %></h2>

@@ -669,3 +669,148 @@ p.white{
 
 （4）、呈现效果
   <img src="app/assets/images/xiao-guo-7.png">
+
+# 第五部分：增加动态数据交互
+
+一、代码逻辑思维
+
+增加MVC，修改root
+增加M:rails g model message title:string description:text
+rake db:migrate
+增加C:rails g contrller messages
+rails s
+```
+class MessagesController < ApplicationController
+    before_action :find_message, only: [:show, :edit, :update, :destroy]
+
+    def index
+      @messages = Message.all.order("created_at DESC")
+    end
+
+     def show
+     end
+
+    def new
+      @message = Message.new
+    end
+
+    def create
+        @message = Message.new(message_params)
+        if @message.save
+          redirect_to messages_path
+        else
+          render 'new'
+      end
+    end
+
+    def edit
+    end
+
+    def update
+      if @message.update(message_params)
+        redirect_to message_path
+      else
+        render 'edit'
+      end
+    end
+
+    def destroy
+      @message.destroy
+      redirect_to messages_path
+    end
+
+
+    private
+     def message_params
+       params.require(:message).permit(:title,:description)
+     end
+
+     def find_message
+       @message = Message.find(params[:id])
+     end
+
+  end
+
+```
+安装 simple_form 和bootstap
+
+https://rubygems.org/gems/simple_form
+
+https://rubygems.org/gems/bootstrap-sass
+
+增加v:五个基础界面
+- form.html.erb,
+```
+<%= simple_form_for @message do |f| %>
+    <br>
+    课程标题
+    <%= f.text_field :title %>
+    <br>
+    课程大纲
+    <%= f.text_area :description %>
+    <br>
+  <%= f.submit "增加" %>
+<% end %>
+
+```
+- index.html.erb,
+```
+<% @messages.each do |message| %>
+<h1><%= message.title %></h1>
+<p><%= message.description %></p>
+<%= link_to "阅览课程", message_path(message),class: "btn btn-success" %><h1>
+</div>
+<% end %>
+
+<h2><%= link_to "新增课程", new_message_path, class: "btn btn-default pull-right" %></h2>
+
+```
+- show.html.erb,
+```
+<div class="col-md-8">
+  <div class=message>
+<h1><%= @message.title %></h1>
+<p><%= @message.description %></p>
+<!-- add a postde at timestamp !-->
+<%= link_to "返回主页", root_path, class: "btn btn-default" %>
+<%= link_to "编辑课程", edit_message_path(@message) %>
+<%= link_to "删除课程", message_path(@message), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
+
+</div>
+</div>
+
+```
+- new.html.erb,
+```
+<div class="col-md-8">
+  <h1>新建课程</h1>
+
+<h1><%= render 'form' %><h1>
+
+</div>
+
+
+```
+- edit.html.erb
+```
+<div class="col-md-4">
+  <h1>编辑课程</h1>
+
+<h1><%= render 'form' %></h1>
+</div>
+```
+
+增加root：
+
+```
+resources :messages
+```
+
+增加首页按钮
+```
+ <p class="white">  <%= link_to "进入学习大厅", messages_path, class: "btn btn-default" %></p>
+```
+二、界面展示
+
+<img src="app/assets/images/xiao-guo-8.png">
+<img src="app/assets/images/xiao-guo-9.png">

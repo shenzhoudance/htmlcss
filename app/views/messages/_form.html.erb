@@ -1,0 +1,10 @@
+<%= simple_form_for @message do |f| %>
+    <br>
+    课程标题
+    <%= f.text_field :title %>
+    <br>
+    课程大纲
+    <%= f.text_area :description %>
+    <br>
+  <%= f.submit "增加" %>
+<% end %>

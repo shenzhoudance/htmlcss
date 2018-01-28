@@ -13,7 +13,8 @@
  *= require_tree .
  *= require_self
  */
-
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
 
  #container{
    margin: 0pt auto;
@@ -37,12 +38,16 @@
    width: 770px;
 
  }
- h1{
+h1{
    margin: 0px;
    padding: 0px;
-   border: 2px dotted black;
-   text-align: center;
+   margin-left: 20%;
+   margin-right: 20%;
  }
+
+
+
+
  p.white{
    color:white;
    border: 2px dotted black;
