@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'simple_form', '~> 3.5'
+gem 'devise', '~> 4.4', '>= 4.4.1'
 gem 'stripe'
 group :development, :test do
   gem 'sqlite3', '1.3.12'

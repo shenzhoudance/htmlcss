@@ -815,3 +815,88 @@ resources :messages
 <img src="app/assets/images/xiao-guo-8.png">
 <img src="app/assets/images/xiao-guo-9.png">
 <img src="app/assets/images/xiao-guo-10.png">
+
+
+# 第六部分：增加用户系统
+安装 devise
+https://rubygems.org/gems/devise
+
+```
+bundle install
+
+rails generate devise:install
+
+```
+放入app/views/layouts/application.html.erb
+
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+```
+rails g devise:views
+rake db:migrate
+rails s
+
+```
+
+```
+rake routes
+
+rails s
+
+```
+修改放入app/views/layouts/application.html.erb代码
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>才华横溢</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-herder">
+          <%= link_to "懂你时间", root_path, class: "navbar-brand"%>
+        </div>
+
+        <ul class="navbar-nav nav">
+        <li><%= link_to "注册", new_user_registration_path %></li>
+        <% if user_signed_in? %>
+          <li><%=link_to "退出", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+           <li><%= link_to "登录", new_user_session_path %></li>
+         <% end %>
+         </ul>
+
+         <% if user_signed_in? %>
+           <p><%= link_to "新增课程" , new_message_path ,class: "navbar-right navbar-text navbar-link" %></p>
+        <% end %>
+      		</div>
+      	</nav>
+
+      </div>
+    </nav>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
+</html>
+
+```
+
+二、界面展示
+
+<img src="app/assets/images/xiao-guo-11.png">
+<img src="app/assets/images/xiao-guo-12.png">
+<img src="app/assets/images/xiao-guo-13.png">
