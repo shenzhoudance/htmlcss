@@ -18,7 +18,6 @@
 
  body{
    background-color: #0fbcf9;
-   border: 2px solid white;
  }
 
 
@@ -51,10 +50,11 @@ h1{
  }
 
 
- p.white{
-   color:white;
+ p {
+   color:black;
    text-align: center;
  }
+
 
 
  #content{
@@ -107,3 +107,10 @@ h1{
  #footer h3 {text-align: center;}
  #footer a {color: rgb(0, 0, 0);}
  #footer a:hover{color: rgb(223, 58, 0);}
+
+
+#bunton-show{
+text-align: center;
+margin-top:400px;
+float: right;
+}

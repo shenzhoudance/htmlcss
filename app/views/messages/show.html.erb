@@ -1,12 +1,11 @@
 
-<div class="col-md-8">
-  <div class=message>
-<h1><%= @message.title %></h1>
-<p><%= @message.description %></p>
-<!-- add a postde at timestamp !-->
-<%= link_to "返回主页", root_path, class: "btn btn-default" %>
-<%= link_to "编辑课程", edit_message_path(@message) %>
-<%= link_to "删除课程", message_path(@message), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
 
-</div>
-</div>
+
+        <p><%= @message.title %></p>
+        <p><%= @message.description %></p>
+        <!-- add a postde at timestamp !-->
+        <div id="bunton-show">
+            <%= link_to "返回主页", root_path, class: "btn btn-default" %>
+            <%= link_to "编辑课程", edit_message_path(@message),class: "btn btn-default" %>
+            <%= link_to "删除课程", message_path(@message), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>
+        </div>
