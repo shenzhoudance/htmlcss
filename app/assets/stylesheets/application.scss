@@ -16,28 +16,33 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
- #container{
-   margin: 0pt auto;
-   width: 770px;
-   position:relative;
-   border: 2px dotted black;
+ body{
+   background-color: #0fbcf9;
+   border: 2px solid white;
  }
 
- #menu{
-   margin: 0pt auto;
-   border: 2px dotted black;
-   width: 770px;
+
+ #menu li{
+   list-style-type: none;
+   float: left;
+   text-align: center;
+   border: 2px solid white;
+   width: 265px;
+ }
+
+ #menu a:hover{
+   color: rgb(149, 32, 32);
  }
 
  #header{
-   background: #c8b99c;
+   background: #4bcffa;
    text-align: center;
-   border: 2px dotted black;
-   top: 45px;
-   position: absolute;
-   width: 770px;
+   border: 2px solid white;
+   margin: 0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;
 
  }
+
 h1{
    margin: 0px;
    padding: 0px;
@@ -46,33 +51,16 @@ h1{
  }
 
 
-
-
  p.white{
    color:white;
-   border: 2px dotted black;
    text-align: center;
  }
 
-
-
- #menu li{
-   list-style-type: none;
-   float: left;
-   text-align: center;
-   width: 180px;
-   margin-right: 3px;
-   font-size: 1.05em;
-   border: 2px dotted black;
- }
- #menu a:hover{
-   color: rgb(149, 32, 32);
- }
 
  #content{
-   background: #c8b99c;
-   border: 2px dotted red;
-   margin-top:130px;
+   background: #4bcffa;
+   border: 2px solid white;
+   margin-top:25px;
    float: left;
    width: 450px;
    margin-left: 3px;
@@ -89,28 +77,30 @@ h1{
  }
 
 
+
  #classroom{
-   background: #c8b99c;
-   border: 2px dotted red;
+   background: #4bcffa;
+   border: 2px solid white;
    float: right;
    width: 300px;
-   margin-top:130px;
+   margin-top:25px;
    margin-right: 3px;
    height: 450px;
-
  }
+
 #classroom li{
   list-style-type: none;
-
 }
 
 #classroom h3 {
   margin-left:20px;
 }
+
  #footer{
-   background: #c8b99c;
+   background: #4bcffa;
    text-align: center;
-   margin-top:650px;
+   margin-top:100px;
+   border: 2px solid white;
  }
 
  #footer p {text-align: center;}

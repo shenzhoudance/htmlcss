@@ -900,3 +900,209 @@ rails s
 <img src="app/assets/images/xiao-guo-11.png">
 <img src="app/assets/images/xiao-guo-12.png">
 <img src="app/assets/images/xiao-guo-13.png">
+
+# 第七部分：首页修改
+
+welcome的代码替换
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>才华横溢</title>
+    <style type="text/css">
+
+       </style>
+  </head>
+  <body>
+            <div id="header">
+                  <br>
+                  <h1>欢迎来到才华横溢职业技能在线大学</h1>
+                  <br>
+                  <p class="white">帮助普通人获得成功的大学</p>
+                  <br>
+                 <p class="white">  <%= link_to "进入学习大厅", messages_path, class: "btn btn-default" %></p>
+            </div>
+
+            <div id="menu">
+              <ul class="me">
+                <li><a href="http://caihuahengyi.cn">懂你时间</li></a>
+                <li><a href="http://caihuahengyi.cn">学习大厅</li></a>
+                <li><a href="http://caihuahengyi.cn">帮助中心</li></a>
+                <li><a href="http://caihuahengyi.cn">立即报名</li></a>
+              </ul>
+            </div>
+
+
+         <div id="container">
+
+           <div id="classroom1">
+               <h3><span>主推课程</span></h3>
+               <ul class="span1">
+                 <li><a href="#">全栈工程师</a></li>
+                 <li><a href="#">职场化办公</a></li>
+                 <li><a href="#">内容运营官</a></li>
+               </ul>
+
+               <h3><span>前沿科技</span></h3>
+               <ul class="span2">
+                 <li><a href="#">区块链技术</a></li>
+                 <li><a href="#">虚拟现实技术</a></li>
+                 <li><a href="#">人工智能技术</a></li>
+               </ul>
+
+           <h3><span>管理课程</span></h3>
+                 <ul class="span3">
+                   <li><a href="#">财务官</a></li>
+                   <li><a href="#">执行官</a></li>
+                   <li><a href="#">运营官</a></li>
+                 </ul>
+           </div>
+         </div>
+
+            <div id="content">
+                  <h3><a href="http://caihuahengyi.cn">欢迎来到全球最大的职业技能大学</a></h3>
+                  <p><img src="<%= image_url 'yan-jiang.png' %>" "width=150px; height=150px" alt="">
+                    <audio controls="controls">
+                      <source src="http://audio.xmcdn.com/group39/M08/D6/47/wKgJn1pqTSKyTdTEAB06n_38gao036.m4a" type="audio/mp3" />
+                    </audio>
+                  </p>
+
+            </div>
+
+            <div id="classroom">
+                <h3><span>主推课程</span></h3>
+                <ul class="span1">
+                  <li><a href="#">全栈工程师</a></li>
+                  <li><a href="#">职场化办公</a></li>
+                  <li><a href="#">内容运营官</a></li>
+                </ul>
+
+                <h3><span>前沿科技</span></h3>
+                <ul class="span2">
+                  <li><a href="#">区块链技术</a></li>
+                  <li><a href="#">虚拟现实技术</a></li>
+                  <li><a href="#">人工智能技术</a></li>
+                </ul>
+
+            <h3><span>管理课程</span></h3>
+                  <ul class="span3">
+                    <li><a href="#">财务官</a></li>
+                    <li><a href="#">执行官</a></li>
+                    <li><a href="#">运营官</a></li>
+                  </ul>
+            </div>
+          </div>
+
+
+
+
+
+            <div id="footer">
+                  <h3>才华横溢科技（北京）有限责任公司</h3>
+                  <p><a href="http://caihuahengyi.cn">帮助普通人获得成功的一所在线职业技能大学</a></p>
+                  <p>2014-2018</p>
+            </div>
+
+  </body>
+</html>
+```
+
+css 代码替换
+```
+body{
+  background-color: #0fbcf9;
+  border: 2px solid white;
+}
+
+
+#menu li{
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  border: 2px solid white;
+  width: 265px;
+}
+
+#menu a:hover{
+  color: rgb(149, 32, 32);
+}
+
+#header{
+  background: #4bcffa;
+  text-align: center;
+  border: 2px solid white;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+
+}
+
+h1{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+
+p.white{
+  color:white;
+  text-align: center;
+}
+
+
+#content{
+  background: #4bcffa;
+  border: 2px solid white;
+  margin-top:25px;
+  float: left;
+  width: 450px;
+  margin-left: 3px;
+  height: 450px;
+
+}
+
+#content h3{
+ text-align: center;
+}
+
+#content p{
+  text-align: center;
+}
+
+
+
+#classroom{
+  background: #4bcffa;
+  border: 2px solid white;
+  float: right;
+  width: 300px;
+  margin-top:25px;
+  margin-right: 3px;
+  height: 450px;
+}
+
+#classroom li{
+ list-style-type: none;
+}
+
+#classroom h3 {
+ margin-left:20px;
+}
+
+#footer{
+  background: #4bcffa;
+  text-align: center;
+  margin-top:100px;
+  border: 2px solid white;
+}
+
+#footer p {text-align: center;}
+#footer h3 {text-align: center;}
+#footer a {color: rgb(0, 0, 0);}
+#footer a:hover{color: rgb(223, 58, 0);}
+```
+二、界面展示
+
+<img src="app/assets/images/xiao-guo-14.png">

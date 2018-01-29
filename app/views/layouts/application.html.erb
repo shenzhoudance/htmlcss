@@ -14,9 +14,12 @@
       <div class="container">
         <div class="navbar-herder">
           <%= link_to "懂你时间", root_path, class: "navbar-brand"%>
+          <%= link_to "学习大厅", messages_path, class: "navbar-brand" %>
+          <%= link_to "帮助中心", messages_path, class: "navbar-brand" %>
         </div>
 
         <ul class="navbar-nav nav">
+
         <li><%= link_to "注册", new_user_registration_path %></li>
         <% if user_signed_in? %>
           <li><%=link_to "退出", destroy_user_session_path, method: :delete %></li>
