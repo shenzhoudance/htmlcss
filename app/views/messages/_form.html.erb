@@ -4,12 +4,12 @@
                <%= simple_form_for @message do |f| %>
                   <br>
                   <p>课程标题</p>
-                  <p><%= f.text_field :title %></p>
+                  <h2><%= f.text_field :title %></h2>
 
                   <br>
                   <p>课程大纲</p>
-                  <p><%= f.text_area :description %></p>
+                  <h2><%= f.text_area :description %></h2>
                   <br>
-                  <p><%= f.submit "增加" ,class: "btn btn-default" %></p>
+                  <p><%= f.submit "确定发布" ,class: "btn bg btn-default" %></p>
 
                  <% end %>
